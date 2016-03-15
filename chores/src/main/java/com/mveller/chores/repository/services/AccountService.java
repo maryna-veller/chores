@@ -9,5 +9,5 @@ public interface AccountService {
     Account getAccount(Long id);
     Account createAccount(Account account);
     Account updateAccount(Account account);
-    void deleteAccount(Long id);
+    Long deleteAccount(Long id);
 }

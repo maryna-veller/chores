@@ -37,8 +37,9 @@ public class AccountServiceImpl implements AccountService {
         return account;
     }
 
-    public void deleteAccount(Long id) {
+    public Long deleteAccount(Long id) {
         Account account = getAccount(id);
         accountRepository.delete(account);
+        return id;
     }
 }
